@@ -1,0 +1,4 @@
+dist/**/*
+!**/readme.md
+
+node_modules/
