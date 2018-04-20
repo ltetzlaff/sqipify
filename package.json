@@ -22,12 +22,14 @@
   "author": "ltetzlaff",
   "license": "All rights reserved.",
   "devDependencies": {
+    "@types/filesize": "^3.6.0",
     "@types/image-size": "0.0.29",
     "@types/node": "^9.4.6",
-    "tslint-lt": "^1.6.1",
+    "tslint-lt": "^1.6.2",
     "typescript": "^2.7.2"
   },
   "dependencies": {
+    "filesize": "^3.6.1",
     "image-size": "^0.6.2",
     "sqip": "^0.3.3"
   }
