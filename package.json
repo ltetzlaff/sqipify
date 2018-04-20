@@ -8,6 +8,7 @@
     "lint": "tslint --format stylish --project .",
     "prettier": "prettier --config node_modules/tslint-lt/.prettierrc.yml --write \"{,!node_modules/}**/*.{ts,tsx}\"",
     "test": "npm run buildOnce && npm run lint && npm run prettier && node dist/tests/index.js",
+    "testAll": "npm run buildOnce && npm run lint && npm run prettier && node dist/tests/index.js --all",
     "prepare": "npm run buildOnce"
   },
   "files": [
@@ -25,12 +26,14 @@
     "@types/filesize": "^3.6.0",
     "@types/image-size": "0.0.29",
     "@types/node": "^9.4.6",
+    "@types/svgo": "^1.0.0",
     "tslint-lt": "^1.6.3",
     "typescript": "^2.7.2"
   },
   "dependencies": {
     "filesize": "^3.6.1",
     "image-size": "^0.6.2",
-    "sqip": "^0.3.3"
+    "sqip": "^0.3.3",
+    "svgo": "^1.0.5"
   }
 }
