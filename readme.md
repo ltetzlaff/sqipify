@@ -8,16 +8,17 @@
 
 Generate SVG Placeholders for Images using SQIP.
 
-| | *numberOfPrimitives* |
-| *blur*  | |
+|         | *numberOfPrimitives* |
+|---------|----------------------|
+| *blur*  |                      |
 
 
 |     | 10 | 50 | 100 | 500 |
-|-----|-------------------------------------|-------------------------------------|--------------------------------------|---------------------------------------|
-| 0   | <img src="./p10b0m0.svg"> 1.12 KB   | <img src="./p50b0m0.svg"> 4.68 KB   | <img src="./p100b0m0.svg"> 8.79 KB   | <img src="./p500b0m0.svg"> 50.03 KB   |
-| 10  | <img src="./p10b10m0.svg"> 1.33 KB  | <img src="./p50b10m0.svg"> 4.78 KB  | <img src="./p100b10m0.svg"> 8.81 KB  | <img src="./p500b10m0.svg"> 50.84 KB  |
-| 25  | <img src="./p10b25m0.svg"> 995 B    | <img src="./p50b25m0.svg"> 4.64 KB  | <img src="./p100b25m0.svg"> 8.57 KB  | <img src="./p500b25m0.svg"> 50.51 KB  |
-| 100 | <img src="./p10b100m0.svg"> 1.32 KB | <img src="./p50b100m0.svg"> 4.96 KB | <img src="./p100b100m0.svg"> 8.97 KB | <img src="./p500b100m0.svg"> 50.68 KB |
+|-----|------------------------------------------------|------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
+| 0   | <img src="test-results/p10b0m0.svg"> 1.12 KB   | <img src="test-results/p50b0m0.svg"> 4.68 KB   | <img src="test-results/p100b0m0.svg"> 8.79 KB   | <img src="test-results/p500b0m0.svg"> 50.03 KB   |
+| 10  | <img src="test-results/p10b10m0.svg"> 1.33 KB  | <img src="test-results/p50b10m0.svg"> 4.78 KB  | <img src="test-results/p100b10m0.svg"> 8.81 KB  | <img src="test-results/p500b10m0.svg"> 50.84 KB  |
+| 25  | <img src="test-results/p10b25m0.svg"> 995 B    | <img src="test-results/p50b25m0.svg"> 4.64 KB  | <img src="test-results/p100b25m0.svg"> 8.57 KB  | <img src="test-results/p500b25m0.svg"> 50.51 KB  |
+| 100 | <img src="test-results/p10b100m0.svg"> 1.32 KB | <img src="test-results/p50b100m0.svg"> 4.96 KB | <img src="test-results/p100b100m0.svg"> 8.97 KB | <img src="test-results/p500b100m0.svg"> 50.68 KB |
 
 ## Setup (in ./)
 
