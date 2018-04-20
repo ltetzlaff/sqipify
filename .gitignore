@@ -1,4 +1,4 @@
 dist/**/*
 !**/readme.md
-src/tests/result.*
+src/tests/results
 node_modules/

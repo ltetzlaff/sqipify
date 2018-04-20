@@ -3,7 +3,7 @@ export interface IImgDimensions {
   height: number
 }
 
-export declare enum Primitive {
+export const enum Primitive {
   Combo = 0,
   Triangle = 1,
   Rect = 2,
@@ -19,5 +19,5 @@ export interface IAPIOptions extends IImgDimensions {
   filename: string
   blur: number
   numberOfPrimitives: number
-  mode: Primitive
+  mode: Primitive | number
 }

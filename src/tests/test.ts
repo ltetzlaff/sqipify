@@ -1,29 +1,36 @@
-import m from ".."
+import sqipify from ".."
 import { resolve, dirname, join } from "path"
-import { Primitive } from "../sqip"
 import { writeFile } from "../fs"
+import { ITestCase } from "./ITestCase"
 
-const file = "./norway.jpg"
+export class Test {
+  constructor(private testCase: ITestCase) {}
 
-async function run() {
-  // tslint:disable-next-line:no-magic-numbers
-  const { input, output } = await m(file, 20, 12, Primitive.Combo)
-  const base = join(dirname(resolve(file)), "src", "tests", "result")
+  public async run() {
+    const { file, numberOfPrimitives, blur, mode, name } = this.testCase
+    const { input, output } = await sqipify(
+      file,
+      numberOfPrimitives,
+      blur,
+      mode
+    )
+    const base = join(dirname(resolve(file)), "src", "tests", "results", name)
 
-  const writes = [
-    { path: base + ".svg", content: output.svg, size: output.svgSize },
-    {
-      path: base + ".base64.txt",
-      content: output.base64,
-      size: output.base64Size
-    }
-  ]
-  await Promise.all(writes.map(async w => writeFile(w.path, w.content)))
+    const writes = [
+      { path: base + ".svg", content: output.svg, size: output.svgSize },
+      {
+        path: base + ".base64.txt",
+        content: output.base64,
+        size: output.base64Size
+      }
+    ]
+    await Promise.all(writes.map(async w => writeFile(w.path, w.content)))
 
-  console.log(`
+    console.log(`
   Testing sqipify on: ${file}
-    Type: ${input.type}, Dimensions: ${input.width}x${input.height}
-    Results: ${JSON.stringify(writes)}`)
+    Input: ${JSON.stringify(input)}
+    Outputs: ${JSON.stringify(
+      writes.map(({ path, size }) => ({ path, size }))
+    )}`)
+  }
 }
-
-run()
