@@ -1,8 +1,9 @@
-import * as sqip from "sqip"
-import { IAPIOptions, Primitive } from "./sqip"
 import * as sizeOf from "image-size"
 import * as filesize from "filesize"
 import { stat } from "./fs"
+import { optimizeSVG } from "./optimize"
+import { generateSVG } from "./generate"
+import { Primitive } from "./sqip"
 
 async function parseInput(filename: string) {
   const { width, height, type } = sizeOf(filename)
@@ -10,18 +11,12 @@ async function parseInput(filename: string) {
   return { size, type, filename, width, height }
 }
 
-function sqipify(options: IAPIOptions) {
-  const { final_svg: svg, svg_base64encoded: base64 } = sqip(options)
-  const svgSize = filesize(svg.length)
-  const base64Size = filesize(base64.length)
-  return { svg, base64, svgSize, base64Size }
-}
-
 export default async function(
   filename: string,
   numberOfPrimitives: number,
   blur = 0,
-  mode = Primitive.Combo
+  mode = Primitive.Combo,
+  optimize = true
 ) {
   const input = await parseInput(filename)
   const { width, height } = input
@@ -34,7 +29,13 @@ export default async function(
     filename
   }
 
-  const output = sqipify(options)
+  const output = generateSVG(options)
+
+  if (optimize) {
+    const optimized = await optimizeSVG(output.svg)
+    output.svgSize = filesize(optimized.length)
+    output.svg = optimized
+  }
 
   return {
     input,
