@@ -1,11 +1,11 @@
-import sqip, { Primitive } from "sqip"
+import * as sqip from "sqip"
 import * as sizeOf from "image-size"
 
 export default function svgify(
   filename: string,
   numberOfPrimitives: number,
   blur = 0,
-  mode = Primitive.Combo
+  mode = 0
 ) {
   const { width, height, type } = sizeOf(filename)
   const options = {
