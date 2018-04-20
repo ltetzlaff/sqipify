@@ -1,6 +1,6 @@
 # sqipify
 
-[![Build Status](https://travis-ci.com/ltetzlaff/sqipify.svg?token=<token>&branch=master)](https://travis-ci.com/ltetzlaff/sqipify)
+[![Build Status](https://travis-ci.org/ltetzlaff/sqipify.svg?branch=master)](https://travis-ci.com/ltetzlaff/sqipify)
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
