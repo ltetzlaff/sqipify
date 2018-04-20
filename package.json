@@ -8,7 +8,7 @@
     "lint": "tslint --format stylish --project .",
     "prettier": "prettier --config node_modules/tslint-lt/.prettierrc.yml --write \"{,!node_modules/}**/*.{ts,tsx}\"",
     "test": "npm run buildOnce && npm run lint && npm run prettier && node dist/tests/index.js",
-    "prepublish": "npm run buildOnce"
+    "prepare": "npm run buildOnce"
   },
   "files": [
     "dist"
