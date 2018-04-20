@@ -1,5 +1,5 @@
 {
-  "name": "svgify",
+  "name": "sqipify",
   "version": "1.0.0",
   "description": "Use SQIP to transform large image assets to svgs on some preset levels",
   "scripts": {
@@ -17,7 +17,7 @@
   "types": "dist/index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ltetzlaff/svgify.git"
+    "url": "https://github.com/ltetzlaff/sqipify.git"
   },
   "author": "ltetzlaff",
   "license": "All rights reserved.",
@@ -25,7 +25,7 @@
     "@types/filesize": "^3.6.0",
     "@types/image-size": "0.0.29",
     "@types/node": "^9.4.6",
-    "tslint-lt": "^1.6.2",
+    "tslint-lt": "^1.6.3",
     "typescript": "^2.7.2"
   },
   "dependencies": {

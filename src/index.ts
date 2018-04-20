@@ -10,7 +10,7 @@ async function parseInput(filename: string) {
   return { size, type, filename, width, height }
 }
 
-function svgify(options: IAPIOptions) {
+function sqipify(options: IAPIOptions) {
   const { final_svg: svg, svg_base64encoded: base64 } = sqip(options)
   const svgSize = filesize(svg.length)
   const base64Size = filesize(base64.length)
@@ -34,7 +34,7 @@ export default async function(
     filename
   }
 
-  const output = svgify(options)
+  const output = sqipify(options)
 
   return {
     input,

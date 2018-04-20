@@ -21,7 +21,7 @@ async function run() {
   await Promise.all(writes.map(async w => writeFile(w.path, w.content)))
 
   console.log(`
-  Testing svgify on: ${file}
+  Testing sqipify on: ${file}
     Type: ${input.type}, Dimensions: ${input.width}x${input.height}
     Results: ${JSON.stringify(writes)}`)
 }
