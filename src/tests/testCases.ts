@@ -6,8 +6,8 @@ const file = "./norway.jpg"
 export default [
   // tslint:disable:no-magic-numbers
   // 0 Blur
-  { numberOfPrimitives: 10, blur: 0, mode: Primitive.Combo }
-  /*{ numberOfPrimitives: 50, blur: 0, mode: Primitive.Combo },
+  { numberOfPrimitives: 10, blur: 0, mode: Primitive.Combo },
+  { numberOfPrimitives: 50, blur: 0, mode: Primitive.Combo },
   { numberOfPrimitives: 100, blur: 0, mode: Primitive.Combo },
   { numberOfPrimitives: 500, blur: 0, mode: Primitive.Combo },
 
@@ -71,7 +71,7 @@ export default [
   { numberOfPrimitives: 10, blur: 10, mode: Primitive.Rect },
   { numberOfPrimitives: 50, blur: 10, mode: Primitive.Rect },
   { numberOfPrimitives: 100, blur: 10, mode: Primitive.Rect },
-  { numberOfPrimitives: 500, blur: 10, mode: Primitive.Rect }*/
+  { numberOfPrimitives: 500, blur: 10, mode: Primitive.Rect }
   // tslint:enable:no-magic-numbers
 ].map(t => ({
   file,
