@@ -31,9 +31,5 @@ declare module "sqip" {
 
   function sqip(options: IAPIOptions): IResult
 
-  namespace sqip {
-
-  }
-
   export = sqip
 }

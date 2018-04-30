@@ -1,6 +1,6 @@
 import { IAPIOptions, Primitive } from "./sqip"
-import * as sqip from "sqip"
-import * as filesize from "filesize"
+import sqip from "sqip"
+import filesize from "filesize"
 
 export function generateSVG(options: IAPIOptions) {
   const { final_svg: svg, svg_base64encoded: base64 } = sqip(options)

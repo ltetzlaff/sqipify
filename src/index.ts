@@ -1,5 +1,5 @@
-import * as sizeOf from "image-size"
-import * as filesize from "filesize"
+import sizeOf from "image-size"
+import filesize from "filesize"
 import { stat } from "./fs"
 import { optimizeSVG } from "./optimize"
 import { generateSVG } from "./generate"

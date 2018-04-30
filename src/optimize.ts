@@ -1,7 +1,4 @@
-// tslint:disable-next-line:no-require-imports
-import SVGO = require("svgo")
-// wait for https://github.com/DefinitelyTyped/DefinitelyTyped/pull/25172
-//import * as SVGO from "svgo"
+import SVGO from "svgo"
 
 const optimizer = new SVGO()
 
