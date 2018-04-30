@@ -4,6 +4,17 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+## CLI
+
+(Github)[https://github.com/ltetzlaff/sqipify-cli]
+
+(NPM)[https://www.npmjs.com/package/sqipify-cli]
+
+```
+npm i -g sqipify-cli
+sqipify --help
+```
+
 ## Demo
 
 Generate SVG Placeholders for Images using [SQIP](https://github.com/technopagan/sqip) based on [Primitive](https://github.com/fogleman/primitive).
