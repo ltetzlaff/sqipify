@@ -6,9 +6,9 @@
 
 ## CLI
 
-(Github)[https://github.com/ltetzlaff/sqipify-cli]
+[Github](https://github.com/ltetzlaff/sqipify-cli)
 
-(NPM)[https://www.npmjs.com/package/sqipify-cli]
+[NPM](https://www.npmjs.com/package/sqipify-cli)
 
 ```
 npm i -g sqipify-cli
